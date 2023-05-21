@@ -1,11 +1,5 @@
+const sequelize = require('../config/db');
 const Sequelize = require('sequelize');
-
-// Initialize Sequelize with your PostgreSQL connection details
-const sequelize = new Sequelize('nusalingo', 'postgres', '123', {
-    host: 'localhost',
-    dialect: 'postgres',
-});
-
 // Define the 'User' model
 const User = sequelize.define('user', {
     username: {
